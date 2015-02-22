@@ -108,7 +108,7 @@
                 <!--评论内容-->
                 <?php
                     include("../admin/putcomment.php");
-                         foreach ($allcomment as $key) {
+                         foreach (array_reverse($allcomment) as $key) {
                     ?>
                 <div class="rev">
                 <div class="rev-body">
