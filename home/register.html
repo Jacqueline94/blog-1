@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<p style="text-align:center;font-size:30px;">欢迎注册！</p>
+	<form role="form" class="position" action="../admin/register.php" method="post" name="myform" onsubmit="return CheckPost()">
+  <div class="form-group">
+    <label>邮箱：</label>
+    <input type="email" class="form-control" name="email" placeholder="请输入您的邮箱地址">
+  </div>
+  <div class="form-group">
+    <label>密码</label>
+    <input type="password" class="form-control" name="password" placeholder="请输入您的邮箱密码">
+  </div>
+  <div class="form-group">
+    <label>昵称</label>
+    <input type="text" class="form-control" name="name" placeholder="请输入您的昵称">
+  </div>
+  <button type="submit" class="btn btn-primary">完成</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.whole{
+	background:#e7e9e8;
+}
+.head .mid,
+.top .mid,
+.mid .mid,
+.bottom .mid{
+	width: 1187px;
+	height: 100%;
+	margin:0 auto;
+}
+/*设置顶部样式*/
+.head{
+    background: -moz-linear-gradient(top, #f6f6f6, #e9e9e9);
+    background: -o-linear-gradient(top,#f6f6f6, #e9e9e9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f6f6), to(#e9e9e9));
+    border-bottom: 1px solid #d0d2d1;
+}
+.head .mid{
+	height: 40px;
+}
+.log{
+	margin-top: 2px;
+	margin-left: 5px;
+	float:left;
+	width: 114px;
+	height: 32px;
+}
+/*设置搜索框样式*/
+.search{
+	float:left;
+	background:#ffffff;
+	height: 26px;
+	margin-top: 7px;
+	margin-left: 25px;
+	border-radius: 4px;
+}
+.search .form-control{
+	float:left;
+	margin: 0px;
+	height: 26px;
+	border:0 none;
+	width: 135px;
+}
+.btn_btn-GO{
+	float:right;
+	margin-top: 6px;
+	margin-right: 7px;
+	border:0 none;
+    background:url("../img/search.png") no-repeat;
+    width: 15px;
+    height: 15px;
+}
+/*设置头部导航样式*/   
+.head_nav {
+    float:right;
+    width: 320px; 
+    height: 37px;
+    background: -moz-linear-gradient(top,#f6f6f6 , #e9e9e9);
+    background: -o-linear-gradient(top,#f6f6f6, #e9e9e9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f6f6), to(#e9e9e9));
+}
+.head_nav a{
+	color:#636363;
+}
+/*设置顶部个人主页*/
+.information{
+	color:#636363;
+	padding: 30px;
+}
+.information a{
+	color:#636363;
+}
+/*个人首页导航*/
+.navigation{
+	margin-top: 30px;
+}
+.navigation span{
+    margin-right: 5px;
+}
+/*博客列表样式*/
+.mid .mid{
+	height: 783px;
+}
+.blogs_head{
+	background: -moz-linear-gradient(top,#e3e3e3,#fafafa);
+    background: -o-linear-gradient(top,#e3e3e3,#fafafa);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e3e3e3), to(#fafafa));
+    height: 33px;
+}
+.left{
+	float:left;
+	margin-top: 11px;
+	margin-left: 13px;
+	color:#87849f;
+}
+.blogs{
+	margin-top: 12px;
+	border: 1px solid  #c9cbca;
+	background-color:#ffffff;
+}
+.bloglist{
+	border: 1px solid #c9cbca;
+	border-radius: 4px;
+	margin: 20px;
+}
+.blogs-body{
+	padding: 20px;
+}
+.pagination-lg{
+	margin:0 auto;
+}
+/*写博文*/
+.bottom .mid{
+	height: 450px;
+}
+.sayword{
+	background:#CA2F2F;
+	color: #ffffff;
+	border-radius: 7px;
+	width: 130px;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 15px;
+}
+.bottom .mid .form-control{
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+	height: 320px;
+}
+.btn-group{
+	float:right;
+	margin-top: 10px;
+}
+.btn-primary{
+	margin-left: 50px;
+}
