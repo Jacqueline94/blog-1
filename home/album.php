@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/showPic.js"></script>
 </head>
 <body>
     <div class="whole">
@@ -75,59 +76,33 @@
             </div>
         </div>
         </div>
-        <!--博客列表-->
-        <div class="mid">
-        <div class="mid">
-        	<div class="blogs">
-                <div  class="blogs_head"><sapn class="left">好友留言</sapn></div>
-                <?php
-                    include("../admin/putmessage.php");
-                    foreach ($allcomment as $key) {
-                ?>
-                <div class="bloglist">
-                <div class="blogs-body">
-                    <h1><a href="#"><?php echo"$key[sendername]";?></a></h1>
-                    <p><b><?php echo"$key[message]";?></b></p>
-                </div>
-                </div>
-                <?php
-                    }
-                ?>
-            </div>
-            <ul class="pagination pagination-lg">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-            </ul> 
-        </div>
-        
-        </div>
-        <!--写博文-->
-        <div class="bottom">
-        <div class="mid">
-            <div class="sayword">说点什么吧^_^</div>
-        <form action="../admin/message.php" method="post">
-            <sqan class="text-info">你想留言给哪位好友：</span>
-                <input type="text" name="username">
-            <textarea class="form-control" rows="3" name="message"></textarea>
-            <div class="btn-group dropup">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    所有人可见<span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">所有人可见</a></li>
-                    <li><a href="#">仅自己可见</a></li>
-                </ul>
-                <input type="submit" class="btn btn-primary" value="发表">
-                </div>
-             </form>
-        </div>
-        </div>
-    </div>
+        <!--相册-->
+        <ul>
+        	<li>
+        		<a href="image/login.jpg" class="btn btn-info" onclick="showPic(this); return false;">图片库</a>
+        	</li>
+        	<?php
+        	include("putphoto.php");
+        	foreach ($photos as $key) {
+        	?>
+        	<li>
+        	    <a class="btn btn-info" href="<?php echo"$key[iamge]";?>" onclick="showPic(this); return false;"><?php echo"$key[username]";?>上传了照片</a>
+        	</li>
+        	<?php
+               } 
+        	?>
+            <li>
+            	<form action="photo.php" method="post" enctype="multipart/form-data">
+                    <input class="btn btn-success"type="file" name="myfile">
+                    <input class="btn btn-danger" style="position:relative;left:300px;top:-35px" type="submit" name="submit" value="up">
+                </form>
+            </li>
+        </ul>
+        <div style="position:relative;left:375px;top:-100px">
+		<div>
+		<img id="lalala" style="hight:500px;width:500px;" src="image/login.jpg">
+		</div>
+		</div>
 </body>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

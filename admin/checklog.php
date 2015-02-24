@@ -13,7 +13,6 @@ if($allname = $res->fetchAll(PDO::FETCH_ASSOC))
 	    @$name = $key[name];
     }
 	setcookie("username","$name",time()+3600,"/");
-    print_r($_COOKIE);
 	echo"<script language=\"javascript\">
 	location.href='../home/homepage.php';</script>";
 }

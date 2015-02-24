@@ -74,7 +74,7 @@
                     <span><a href="homepage.php">主页</a></span>┊
                     <span><a href="#">关注</a></span>┊
                     <span><a href="message-board.php">留言板</a></span>┊
-                    <span><a href="#">相册</a></span>
+                    <span><a href="album.php">相册</a></span>
                 </div>
             </div>
         </div>
